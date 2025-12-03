@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.14.0 on win32)" generated="2025-12-03T16:15:17.672741" rpa="false" schemaversion="5">
+<suite id="s1" name="Robotframework Collab" source="C:\Users\yasmi\OneDrive - Université de Corse\Bureau\Formation Logwire\Automatisatio des tests\Robotframework_Collab">
+<suite id="s1-s1" name="Tests" source="C:\Users\yasmi\OneDrive - Université de Corse\Bureau\Formation Logwire\Automatisatio des tests\Robotframework_Collab\tests">
+<suite id="s1-s1-s1" name="Login" source="C:\Users\yasmi\OneDrive - Université de Corse\Bureau\Formation Logwire\Automatisatio des tests\Robotframework_Collab\tests\login.robot">
+<test id="s1-s1-s1-t1" name="Saluer" line="14">
+<kw name="Dire Bonjour">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Byby ${nom}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-12-03T16:15:17.899953" elapsed="0.000431"/>
+</kw>
+<arg>Ouissem</arg>
+<status status="PASS" start="2025-12-03T16:15:17.899216" elapsed="0.001399"/>
+</kw>
+<kw name="Yasmine1 Dis Bonjour A" owner="exemple">
+<msg time="2025-12-03T16:15:17.901119" level="INFO">${msg} = Bonjour cedric</msg>
+<var>${msg}</var>
+<arg>cedric</arg>
+<status status="PASS" start="2025-12-03T16:15:17.900913" elapsed="0.000315"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${msg}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-12-03T16:15:17.901461" elapsed="0.000641"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-12-03T16:15:17.902378" elapsed="0.000192"/>
+</kw>
+<status status="PASS" start="2025-12-03T16:15:17.896581" elapsed="0.006146"/>
+</test>
+<status status="PASS" start="2025-12-03T16:15:17.711235" elapsed="0.195909"/>
+</suite>
+<status status="PASS" start="2025-12-03T16:15:17.701789" elapsed="0.208287"/>
+</suite>
+<status status="PASS" start="2025-12-03T16:15:17.676809" elapsed="0.238394"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Robotframework Collab" id="s1" pass="1" fail="0" skip="0">Robotframework Collab</stat>
+<stat name="Tests" id="s1-s1" pass="1" fail="0" skip="0">Robotframework Collab.Tests</stat>
+<stat name="Login" id="s1-s1-s1" pass="1" fail="0" skip="0">Robotframework Collab.Tests.Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

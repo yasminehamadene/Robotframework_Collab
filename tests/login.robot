@@ -1,10 +1,24 @@
 *** Settings ***
 Library    SeleniumLibrary
-Test Setup    Open Browser    http://www.saucedemo.com    chrome   
+Library    ../exemple.py
 Test Teardown    Close Browser
+Test Setup    Open Browser    http://www.saucedemo.com    chrome    
 
+*** Keywords ***
+Dire Bonjour
+    [Arguments]    ${nom}
+    Log To Console    Byby ${nom}
+
+        
 
 *** Test Cases ***
+Saluer
+    Dire Bonjour    Ouissem
+    ${msg}    Yasmine1 Dis Bonjour A    cedric
+    Log To Console    ${msg}   
+ 
+
+
 Login valid
     [Documentation]    Test case to verify valid login functionality
     [Tags]    valid
