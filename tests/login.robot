@@ -1,18 +1,20 @@
 *** Settings ***
 Library    SeleniumLibrary
+Test Setup    Open Browser    http://www.saucedemo.com    chrome   
+Test Teardown    Close Browser
 
 
 *** Test Cases ***
 Login valid
     [Documentation]    Test case to verify valid login functionality
-    Open Browser    http://www.saucedemo.com    chrome
+    [Tags]    valid
     Input Text    id:user-name    standard_user
     Input Password    id:password    secret_sauce
     Click Button    id:login-button
     Location Should Contain    inventory
 
 Login invalid
-    Open Browser    http://www.saucedemo.com    chrome
+    [Tags]    invalid
     Input Text    id:user-name    standard_user
     Input Password    id:password    secret_saue
     Click Button    id:login-button
