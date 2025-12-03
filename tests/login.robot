@@ -6,6 +6,7 @@ Test Teardown    Close Browser
 
 *** Test Cases ***
 Login valid
+    [Documentation]    Test case to verify valid login functionality
     [Tags]    valid
     Input Text    id:user-name    standard_user
     Input Password    id:password    secret_sauce
