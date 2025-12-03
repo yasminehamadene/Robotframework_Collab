@@ -1,6 +1,7 @@
 *** Settings ***
 Library    SeleniumLibrary
 Test Setup    Open Browser    http://www.saucedemo.com    chrome   
+Test Teardown    Close Browser
 
 
 *** Test Cases ***
