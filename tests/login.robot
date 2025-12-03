@@ -2,7 +2,7 @@
 Library    SeleniumLibrary
 Library    ../exemple.py
 Test Setup    Open Browser    http://www.saucedemo.com    chrome   
-Test Teardown    Close Browser
+Test Teardown    Close Browser   
 
 *** Keywords ***
 Dire Bonjour
