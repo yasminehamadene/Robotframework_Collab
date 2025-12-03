@@ -4,6 +4,7 @@ Library    SeleniumLibrary
 
 *** Test Cases ***
 Login valid
+    [Documentation]    Test case to verify valid login functionality
     Open Browser    http://www.saucedemo.com    chrome
     Input Text    id:user-name    standard_user
     Input Password    id:password    secret_sauce
